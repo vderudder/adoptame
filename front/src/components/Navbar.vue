@@ -7,9 +7,17 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Favoritos</b-nav-item>
-          <b-nav-item href="#">Donaciones</b-nav-item>
+          <b-nav-item>
+          <router-link to="/">Home</router-link>
+          </b-nav-item>
+
+          <b-nav-item>
+          <router-link to="/nosotros">Nosotros</router-link>
+          </b-nav-item>
+          
+          <b-nav-item>
+          <router-link to="/donaciones">Donaciones</router-link>
+          </b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -23,11 +31,13 @@
 
 <script>
 export default{
-  
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+router-link {
+  text-decoration: none;
+}
 </style>
