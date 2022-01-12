@@ -1,5 +1,5 @@
 <template>
-  <b-container class="gallery">
+  <b-container class="gallery my-4">
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <b-row>
       <b-col cols="12" lg="4">
@@ -10,14 +10,14 @@
           img-top
           tag="article"
           style="max-width: 20rem"
-          class="mb-2"
+          class="mb-2 mx-auto"
         >
           <b-card-text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Compartir</b-button>
+          <b-button href="#" variant="primary" pill>Compartir</b-button>
         </b-card>
       </b-col>
 
@@ -29,14 +29,14 @@
           img-top
           tag="article"
           style="max-width: 20rem"
-          class="mb-2"
+          class="mb-2 mx-auto"
         >
           <b-card-text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Compartir</b-button>
+          <b-button href="#" variant="primary" pill>Compartir</b-button>
         </b-card>
       </b-col>
 
@@ -48,14 +48,14 @@
           img-top
           tag="article"
           style="max-width: 20rem"
-          class="mb-2"
+          class="mb-2 mx-auto"
         >
           <b-card-text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </b-card-text>
 
-          <b-button href="#" variant="primary">Compartir</b-button>
+          <b-button href="#" variant="primary" pill>Compartir</b-button>
         </b-card>
       </b-col>
     </b-row>
@@ -69,7 +69,5 @@ export default {};
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.gallery {
-    margin-top: 40px;
-}
+
 </style>
