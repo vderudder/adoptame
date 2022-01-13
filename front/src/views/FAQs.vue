@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import FAQsAccordion from '../components/FAQs Accordion.vue'
+import FAQsAccordion from '../components/FAQsAccordion.vue'
 
 export default {
   name: 'FAQs',

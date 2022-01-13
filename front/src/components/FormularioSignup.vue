@@ -30,7 +30,7 @@
     </div>
 
     <div class="text-center mt-5">
-      <b-link to="ingresar">¿Ya tienes cuenta? Inicia sesión</b-link>
+      <b-link to="login">¿Ya tienes cuenta? Inicia sesión</b-link>
     </div>
   </b-form>
 </template>

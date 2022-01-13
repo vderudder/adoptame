@@ -14,8 +14,8 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-button variant="primary mr-3" to="ingresar" pill>Iniciar sesión</b-button>
-          <b-button variant="outline-primary" to="registrar" pill>Registrarme</b-button>
+          <b-button variant="primary mr-3" to="login" pill>Iniciar sesión</b-button>
+          <b-button variant="outline-primary" to="signup" pill>Registrarme</b-button>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

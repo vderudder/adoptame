@@ -27,18 +27,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/FAQs.vue')
   },
   {
-    path: '/ingresar',
-    name: 'Iniciar sesion',
-    component: () => import('../views/InicioSesion.vue')
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
   },
   {
-    path: '/registrar',
-    name: 'Registrarse',
-    component: () => import('../views/RegistroCuenta.vue')
+    path: '/signup',
+    name: 'Signup',
+    component: () => import('../views/Signup.vue')
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

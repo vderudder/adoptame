@@ -24,7 +24,7 @@
           <b-link href="#" class="mb-2 grey-link"
             >¿Olvidó su contraseña?</b-link
           >
-          <b-link to="registrar">¿No tienes cuenta? Regístrate</b-link>
+          <b-link to="signup">¿No tienes cuenta? Regístrate</b-link>
         </div>
 
         <div class="d-flex flex-column align-items-center mt-5">
