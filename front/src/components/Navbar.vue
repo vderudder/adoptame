@@ -8,6 +8,8 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item to="/"> Home</b-nav-item>
+          <b-nav-item to="favoritos"> Favoritos</b-nav-item>
+          <b-nav-item to="mi-perfil"> Mi Perfil</b-nav-item>
           <b-nav-item to="nosotros"> Nosotros </b-nav-item>          
           <b-nav-item to="faqs"> FAQs </b-nav-item>         
         </b-navbar-nav>
