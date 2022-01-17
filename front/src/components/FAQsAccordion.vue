@@ -1,49 +1,18 @@
 <template>
-  <div class="accordion" role="tablist">
-      <b-card no-body class="mb-1">
+  <div class="accordion mt-4" role="tablist">
+      <b-card no-body class="mb-1" v-for="faq in list" :key="faq.id">
         <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-1 variant="primary"
-            >Question 1</b-button
+          <b-button block v-b-toggle="faq.id" variant="primary"
+            >{{ faq.question }}</b-button
           >
         </b-card-header>
         <b-collapse
-          id="accordion-1"
-          visible
+          :id="faq.id"
           accordion="my-accordion"
           role="tabpanel"
         >
           <b-card-body>
-            <b-card-text
-              >I start opened because <code>visible</code> is
-              <code>true</code></b-card-text
-            >
-            <b-card-text>{{ text }}</b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card>
-
-      <b-card no-body class="mb-1">
-        <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-2 variant="primary"
-            >Question 2</b-button
-          >
-        </b-card-header>
-        <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-          <b-card-body>
-            <b-card-text>{{ text }}</b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card>
-
-      <b-card no-body class="mb-1">
-        <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-3 variant="primary"
-            >Question 3</b-button
-          >
-        </b-card-header>
-        <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-          <b-card-body>
-            <b-card-text>{{ text }}</b-card-text>
+            <b-card-text>{{ faq.answer }}</b-card-text>
           </b-card-body>
         </b-collapse>
       </b-card>
@@ -52,6 +21,9 @@
 
 <script>
 export default {
+  props: {
+    list: Array,
+  }
 
 }
 </script>
