@@ -3,9 +3,9 @@
     <b-container class="my-4">
       <h1>Favoritos</h1>
 
-      <Gallery :list="favoritesList" v-show="this.favoritesList" />
+      <Gallery :list="favoritesList" v-if="isListEmpty()" />
 
-      <div v-show="this.favoritesList.length == 0">
+      <div v-else>
         <h3>Aun no tienes favoritos, dale like a algun post</h3>
       </div>
     </b-container>
@@ -34,7 +34,15 @@ export default {
 
   async created() {
     this.favoritesList = await PostFacade.getFavoritesList();
+    console.log(this.favoritesList)
   },
+  
+  methods: {
+    isListEmpty() {
+      if (this.favoritesList.length) return true
+      else return false
+    }
+  }
 };
 </script>
 
